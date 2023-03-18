@@ -1,0 +1,22 @@
+{
+  "id": "nax-art-switch",
+  "version": "1.0.0",
+  "name": "Art switch",
+  "title": {
+    "en_US": "Art Switch",
+    "de_DE": "Art Switch",
+    "fr_FR": "Art Switch",
+    "zh_CN": "Art Switch",
+    "zh_TW": "Art Switch",
+    "ja_JP": "Art Switch",
+    "ko_KR": "Art Switch"
+  },
+  "icons": {
+    "24": "icon.png"
+  },
+  "description": "Swaps combart arts given a keybind (Defaults to F and left stick click) (This will break your circuit tree!)",
+  "plugin": "nax-art-switch/plugin.js",
+  "dependencies": {
+    "nax-module-cache": ">=1.0.0"
+  }
+}

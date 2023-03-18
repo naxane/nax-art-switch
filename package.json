@@ -1,0 +1,14 @@
+{
+  "name": "nax-art-switch",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc --build && rimraf assets && copyfiles -u 1 src/assets/**/* .",
+    "watch": "tsc --build --watch",
+    "lint": "eslint . --ext .js,.ts --ignore-path .gitignore",
+    "format": "prettier --write **/*.{ts,js}"
+  },
+  "devDependencies": {
+    "ultimate-crosscode-typedefs": "dmitmel/ultimate-crosscode-typedefs",
+    "typescript": "^4.9.5"
+  }
+}

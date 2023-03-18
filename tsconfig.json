@@ -1,0 +1,19 @@
+{
+	"include": [
+		"src",
+		"node_modules/ultimate-crosscode-typedefs/crosscode-ccloader-all.d.ts",
+		"src/assets/**.*"
+	],
+	"compilerOptions": {
+		"sourceMap": true,
+		"strict": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"target": "es2018",
+		"allowJs": true,
+		"forceConsistentCasingInFileNames": true,
+		"noErrorTruncation": true,
+		"skipDefaultLibCheck": true,
+		"skipLibCheck": true
+	}
+}
