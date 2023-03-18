@@ -5,6 +5,8 @@ This mod is compatible with [Xenon's Triblader Mod](https://github.com/XenonA7/x
 
 Download the .ccmod file [here](https://github.com/naxane/nax-art-switch/releases/latest).
 
+[](https://github.com/naxane/nax-art-switch/blob/main/docs/media/preview.mp4)
+
 ### Controls
 Default keybind is F, this is configurable in options. Default gamepad button is left stick click.
 
