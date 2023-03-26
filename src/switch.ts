@@ -116,6 +116,10 @@ ig.module("nax-art-switch.switch")
 			onPostUpdate() {
 				this.parent();
 				if (
+					// @ts-ignore
+					!ig.game.isControlBlocked() &&
+					// @ts-ignore
+					sc.model.isGame() &&
 					!ig.loading &&
 					// @ts-ignore
 					!sc.model.isPaused() &&
