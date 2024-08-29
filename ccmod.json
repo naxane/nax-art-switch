@@ -1,16 +1,16 @@
 {
-  "id": "nax-art-switch",
-  "version": "1.0.1",
-  "title": "Art Switch",
-  "icons": {
-    "24": "icon.png"
-  },
+	"id": "nax-art-switch",
+	"version": "1.0.1",
+	"title": "Art Switch",
+	"icons": {
+		"24": "icon.png"
+	},
 	"repository": "https://github.com/naxane/nax-art-switch",
 	"tags": ["QoL"],
 	"authors": ["nax"],
-  "description": "Swaps combart arts given a keybind (Defaults to F and left stick click) (This will break your circuit tree!)",
-  "plugin": "nax-art-switch/plugin.js",
-  "dependencies": {
-    "nax-module-cache": "^1.0.0"
-  }
+	"description": "Swaps combart arts given a keybind (Defaults to F and left stick click) (This will break your circuit tree!)",
+	"plugin": "nax-art-switch/plugin.js",
+	"dependencies": {
+		"nax-module-cache": "^1.0.0"
+	}
 }
