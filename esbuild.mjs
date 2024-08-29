@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { context, build } from "esbuild";
-import { readdirSync, statSync, existsSync, mkdirSync, cpSync, createWriteStream } from "fs";
+import { readdirSync, statSync, existsSync, mkdirSync, cpSync, createWriteStream, exists, readFileSync } from "fs";
 import { basename, join, dirname } from "path";
 import archiver from "archiver";
 import url from "url";
@@ -50,6 +50,13 @@ const esbuildArgs = {
 						cpSync(assetsSourcePath, assetsDestPath, { recursive: true });
 					}
 					cpSync(join(__dirname, "ccmod.json"), join(buildDir, "ccmod.json"));
+
+					const ccmod = JSON.parse(readFileSync("ccmod.json", { encoding: "utf-8" }));
+					if (ccmod.icons) {
+						Object.values(ccmod.icons).forEach(icon => {
+							cpSync(join(__dirname, icon), join(buildDir, icon));
+						});
+					}
 
 					// Zip dist contents and copy to build directory.
 					const outputZip = join(__dirname, outputDir, `${modname}.ccmod`);
